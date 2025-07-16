@@ -4,7 +4,9 @@ import '@mantine/core/styles.css';
 import { Button, createTheme, MantineProvider } from '@mantine/core';
 
 const theme = createTheme({
-  focusRing : "never", 
+  focusRing: 'never',
+  fontFamily: 'Poppins, serif',
+  headings: { fontFamily: 'Merriweather, serif' },
   colors: {
     primary: [
       '#f1fcfa',
@@ -34,13 +36,13 @@ const theme = createTheme({
     ],
   },
 
-  primaryColor : "primary",
-  primaryShade : 4 , 
-  defaultGradient : {
-    from : "primary.4", 
-    to : "primary.8", 
-    deg : 132
-  }
+  primaryColor: 'primary',
+  primaryShade: 4,
+  defaultGradient: {
+    from: 'primary.4',
+    to: 'primary.8',
+    deg: 132,
+  },
 });
 function App() {
   return (
