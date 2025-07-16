@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 import '@mantine/core/styles.css';
 import { Button, createTheme, MantineProvider } from '@mantine/core';
+import AppRoute from './Routes/AppRoute';
 
 const theme = createTheme({
-  focusRing : "never", 
+  focusRing: 'never',
+  fontFamily: 'Poppins, serif',
+  headings: { fontFamily: 'Merriweather, serif' },
   colors: {
     primary: [
       '#f1fcfa',
@@ -34,19 +37,18 @@ const theme = createTheme({
     ],
   },
 
-  primaryColor : "primary",
-  primaryShade : 4 , 
-  defaultGradient : {
-    from : "primary.4", 
-    to : "primary.8", 
-    deg : 132
-  }
+  primaryColor: 'primary',
+  primaryShade: 4,
+  defaultGradient: {
+    from: 'primary.4',
+    to: 'primary.8',
+    deg: 132,
+  },
 });
 function App() {
   return (
     <MantineProvider theme={theme}>
-      <h1 className="text-3xl font-bold underline ">Hello world!</h1>
-      <Button variant="gradient">Button</Button>
+     <AppRoute/>
     </MantineProvider>
   );
 }
