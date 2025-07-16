@@ -9,7 +9,7 @@ const AdmineDashboard = () => {
       <Sidebar />
       <div className="w-full flex flex-col">
         <Header />
-        <Outlet />
+        <Outlet/>
       </div>
     </div>
   );
