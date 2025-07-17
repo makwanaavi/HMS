@@ -3,12 +3,14 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      fontFamily :{
-        body : 'Poppins, sans-serif',
-        san : 'Poppins, sans-serif',
-        heading : 'Merriweather, serif'
+      fontFamily: {
+        body: 'Poppins, sans-serif',
+        san: 'Poppins, sans-serif',
+        heading: 'Merriweather, serif',
       },
       colors: {
+        dark: '#212529',
+        light: '#F0F3FB',
         primary: {
           50: '#f1fcfa',
           100: '#cff8ef',
